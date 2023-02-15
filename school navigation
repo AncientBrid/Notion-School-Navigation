@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #6b3c99;
+			text-decoration: none;
+			text-transform: lowercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ffffff;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #e4d7ef
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="learnhub" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-laptop-file"></i> 𝔩𝔢𝔞𝔯𝔫𝔥𝔲𝔟</a>
+		<a id="homework" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-pen-to-square"></i> 𝔥𝔬𝔪𝔢𝔴𝔬𝔯𝔨</a>
+		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-diagram-project"></i> 𝔭𝔯𝔬𝔧𝔢𝔠𝔱𝔰</a>
+		<a id="research" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-magnifying-glass"></i> 𝔯𝔢𝔰𝔢𝔞𝔯𝔠𝔥</a>
+		<a id="schedule" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-calendar-days"></i> 𝔰𝔠𝔥𝔢𝔡𝔲𝔩𝔢</a>
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'learnhub')
+				window.open("https://www.notion.so/d03dff341eb749c998ddb44216a7a5b2", '_blank').focus();
+			else if (id == 'homework')
+				window.open("https://www.notion.so/b0a50a2f047549bdafe1ed742f010fc6", '_blank').focus();
+			else if (id == 'projects')
+				window.open("https://www.notion.so/a8291327fd964163bc7fcfb378b7a879", '_blank').focus();
+			else if (id == 'research')
+				window.open("https://www.notion.so/c9bbd12b0dd34bd6b8d5d8cf6a8baaa1", '_blank').focus();
+			else if (id == 'schedule')
+				window.open("https://www.notion.so/899510160afb4f2a80da48f9562d4970", '_blank').focus();
+		}
+	</script>
+
+
+</body>
+
+</html>
